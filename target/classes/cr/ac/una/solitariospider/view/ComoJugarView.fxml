@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="900.0" styleClass="mainFxmlClass" stylesheets="@../resources/Style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cr.ac.una.solitariospider.controller.ComoJugarController">
+   <children>
+      <BorderPane prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <center>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fitHeight="64.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true" styleClass="imgAyu" />
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="10.0" VBox.vgrow="ALWAYS">
+                     <children>
+                        <Label text="Antes de Comenzar:">
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </Label>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Al iniciar el juego deberás seleccionar la dificultad con la deseas jugar, ya que aumentará según la cantidad de palos con los que quieras jugar.El juego consiste en ordenar 8 conjuntos de cartas en orden de rango (numero) y en la cantidad de palos que hayas seleccionado:Fácil: espadas.Intermedio: espadas, corazones. Difícil: espadas, corazones, diamantes y flores.Si al finalizar todos los repartos el jugador no consigue ganar la partida se considera una derrota." wrappingWidth="412.025390625" HBox.hgrow="ALWAYS" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="20.0" VBox.vgrow="ALWAYS">
+                     <children>
+                        <Label prefHeight="37.0" prefWidth="54.0" text="Reglas:" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="(1)La carta que coloques sobre otra tiene que extender la escalera, aunque no se necesita que extienda el palo necesariamente.(2)No podrás situar una carta encima del As.(3)El rey no podrás situarla sobre otra, solo si esa columna esta vacía." textAlignment="CENTER" wrappingWidth="511.705078125" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="20.0" VBox.vgrow="ALWAYS">
+                     <children>
+                        <Label text="Puntaje:" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Comienzas con 500 puntos, cada movimiento te restara un punto, completar una escalera te dara puntos y por ultimo, entre mas rápido consigas la victoria (al ordenar todas las cartas) sumara mas puntos todavía." wrappingWidth="503.109375" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </center>
+         <left>
+            <VBox prefHeight="200.0" prefWidth="100.0" styleClass="vboxVolver" BorderPane.alignment="CENTER">
+               <children>
+                  <JFXButton fx:id="btnVolver" contentDisplay="TOP" onAction="#OnActionVolverInicio" prefHeight="661.0" prefWidth="220.0" styleClass="btnVolver" text="Volver">
+                     <graphic>
+                        <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true" styleClass="imgVolver" />
+                     </graphic>
+                  </JFXButton>
+               </children>
+            </VBox>
+         </left>
+      </BorderPane>
+   </children>
+</AnchorPane>

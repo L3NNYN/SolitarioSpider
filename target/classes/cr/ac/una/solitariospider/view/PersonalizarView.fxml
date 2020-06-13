@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane id="AnchorPane" fx:id="root" prefHeight="600.0" prefWidth="900.0" styleClass="mainFxmlClass" stylesheets="@../resources/Style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cr.ac.una.solitariospider.controller.PersonalizarController">
+   <children>
+      <BorderPane prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <center>
+            <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" spacing="10.0" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fitHeight="64.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true" styleClass="imgPerso" />
+                  <HBox alignment="CENTER" prefHeight="136.0" prefWidth="800.0" spacing="30.0" VBox.vgrow="ALWAYS">
+                     <children>
+                        <JFXRadioButton fx:id="radBtnClasico" selected="true" text="Clasico">
+                           <toggleGroup>
+                              <ToggleGroup fx:id="tggEstiloFrontal" />
+                           </toggleGroup>
+                        </JFXRadioButton>
+                        <ImageView pickOnBounds="true" preserveRatio="true" styleClass="imgClasico" />
+                        <JFXRadioButton fx:id="radBtnModerno" text="Moderno" toggleGroup="$tggEstiloFrontal" />
+                        <ImageView pickOnBounds="true" preserveRatio="true" styleClass="imgModerno" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="138.0" prefWidth="800.0" spacing="30.0" VBox.vgrow="ALWAYS">
+                     <children>
+                        <JFXRadioButton fx:id="radBtnAzul" selected="true" styleClass="radBtn" text="Azul">
+                           <toggleGroup>
+                              <ToggleGroup fx:id="tggEstiloTrasero" />
+                           </toggleGroup>
+                        </JFXRadioButton>
+                        <ImageView pickOnBounds="true" preserveRatio="true" styleClass="imgClasicoBack" />
+                        <JFXRadioButton fx:id="radBtnRojo" text="Rojo" toggleGroup="$tggEstiloTrasero" />
+                        <ImageView pickOnBounds="true" preserveRatio="true" styleClass="imgModernoBack" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+                     <children>
+                        <JFXButton fx:id="btnGuardarImagen" onAction="#onActionGuardarImagen" text="Guardar Imagen" />
+                        <ImageView fx:id="imgvParteTrasera" fitHeight="104.0" fitWidth="163.0" pickOnBounds="true" preserveRatio="true" styleClass="btn" />
+                        <JFXButton fx:id="btnSubirImagen" onAction="#onActionSubirImagen" text="Subir Imagen" />
+                     </children>
+                  </HBox>
+                  <JFXButton fx:id="btnGuardar" contentDisplay="RIGHT" onAction="#onActionGuardarEstilo" styleClass="btn" text="Guardar">
+                     <graphic>
+                        <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true" styleClass="imgGuardar" />
+                     </graphic>
+                  </JFXButton>
+               </children>
+               <padding>
+                  <Insets bottom="15.0" top="15.0" />
+               </padding>
+            </VBox>
+         </center>
+         <left>
+            <VBox alignment="CENTER" prefHeight="400.0" prefWidth="100.0" styleClass="vboxVolver" BorderPane.alignment="CENTER">
+               <children>
+                  <JFXButton fx:id="btnVolver" contentDisplay="TOP" onAction="#onActionVolverInicio" prefHeight="631.0" prefWidth="100.0" styleClass="btnVolver" text="Volver">
+                     <graphic>
+                        <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true" styleClass="imgVolver" />
+                     </graphic>
+                  </JFXButton>
+               </children>
+            </VBox>
+         </left>
+      </BorderPane>
+   </children>
+</AnchorPane>

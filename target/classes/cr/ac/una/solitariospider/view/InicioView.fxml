@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane id="inicioAnchorPane" fx:id="root" prefHeight="600.0" prefWidth="900.0" stylesheets="@../resources/Style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cr.ac.una.solitariospider.controller.InicioController">
+   <children>
+      <VBox alignment="CENTER" layoutY="-14.0" prefHeight="200.0" prefWidth="100.0" spacing="40.0" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-14.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <ImageView id="Logo" fitHeight="127.0" fitWidth="571.0" pickOnBounds="true" preserveRatio="true" />
+               </children>
+            </HBox>
+            <JFXButton fx:id="btnPartida" contentDisplay="RIGHT" onAction="#onActionIniciarPartida" text="Iniciar Partida">
+               <graphic>
+                  <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true" styleClass="imgIniPar" />
+               </graphic></JFXButton>
+            <JFXButton fx:id="btnPersonalizar" contentDisplay="RIGHT" onAction="#onActionVentanaPersonalizar" styleClass="btnPerso" text="Personalizacion">
+               <graphic>
+                  <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true" styleClass="imgPerso" />
+               </graphic></JFXButton>
+            <JFXButton fx:id="btnPuntajes" contentDisplay="RIGHT" onAction="#onActionVentanaPuntuaciones" text="Tabla de puntajes">
+               <graphic>
+                  <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true" styleClass="imgPunt" />
+               </graphic></JFXButton>
+            <JFXButton fx:id="btnComoJugar" contentDisplay="RIGHT" onAction="#onActionVentanaComoJugar" styleClass="btnAyu" text="Como Jugar">
+               <graphic>
+                  <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true" styleClass="imgAyu" />
+               </graphic></JFXButton>
+            <JFXButton fx:id="btnAcerdaDe" contentDisplay="RIGHT" onAction="#onActionVentanaAcercaDe" text="Acerca De">
+               <graphic>
+                  <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true" styleClass="imgAcerca" />
+               </graphic></JFXButton>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

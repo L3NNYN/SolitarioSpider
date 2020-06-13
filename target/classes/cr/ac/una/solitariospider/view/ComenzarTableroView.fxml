@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="900.0" styleClass="mainFxmlClass" stylesheets="@../resources/Style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cr.ac.una.solitariospider.controller.ComenzarTableroController">
+   <children>
+      <BorderPane prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <center>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fitHeight="64.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true" styleClass="imgIniPar" />
+                  <VBox alignment="CENTER" prefHeight="630.0" prefWidth="700.0" spacing="20.0" VBox.vgrow="ALWAYS">
+                     <children>
+                        <JFXTextField fx:id="txtNickname" alignment="CENTER" labelFloat="true" prefHeight="25.0" prefWidth="54.0" promptText="Nickname" VBox.vgrow="ALWAYS">
+                           <VBox.margin>
+                              <Insets left="250.0" right="250.0" />
+                           </VBox.margin>
+                        </JFXTextField>
+                        <Label text="Dificultad:" />
+                        <HBox alignment="CENTER" prefHeight="81.0" prefWidth="700.0" spacing="30.0">
+                           <children>
+                              <JFXRadioButton fx:id="radBtnFacil" text="Facil">
+                                 <toggleGroup>
+                                    <ToggleGroup fx:id="tggDificultad" />
+                                 </toggleGroup>
+                              </JFXRadioButton>
+                              <JFXRadioButton fx:id="radBtnIntermedio" text="Intermedia" toggleGroup="$tggDificultad" />
+                              <JFXRadioButton fx:id="radBtnDificil" text="Dificil" toggleGroup="$tggDificultad" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </VBox>
+         </center>
+         <left>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" styleClass="vboxVolver" BorderPane.alignment="CENTER">
+               <children>
+                  <JFXButton fx:id="btnVolver" contentDisplay="TOP" onAction="#onActionVolverInicio" prefHeight="635.0" prefWidth="221.0" styleClass="btnVolver" text="Volver" VBox.vgrow="ALWAYS">
+                     <graphic>
+                        <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true" styleClass="imgVolver" />
+                     </graphic>
+                  </JFXButton>
+               </children>
+            </VBox>
+         </left>
+         <right>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" styleClass="vboxVolver" BorderPane.alignment="CENTER">
+               <children>
+                  <JFXButton fx:id="btnComenzar" contentDisplay="TOP" onAction="#onActionComenzarPartida" prefHeight="639.0" prefWidth="202.0" styleClass="btnVolver" text="Comenzar">
+                     <graphic>
+                        <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true" styleClass="imgAdelante" />
+                     </graphic>
+                  </JFXButton>
+               </children>
+            </VBox>
+         </right>
+      </BorderPane>
+   </children>
+</AnchorPane>

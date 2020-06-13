@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane id="AnchorPane" fx:id="root" prefHeight="600.0" prefWidth="900.0" styleClass="tablero" stylesheets="@../resources/Style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cr.ac.una.solitariospider.controller.TableroController">
+   <children>
+      <VBox fx:id="tablero" prefHeight="600.0" prefWidth="159.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox prefHeight="138.0" prefWidth="900.0" />
+            <HBox prefHeight="468.0" prefWidth="900.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <VBox fx:id="columna1" alignment="BOTTOM_CENTER" prefHeight="200.0" prefWidth="100.0" styleClass="VboxColumna" HBox.hgrow="ALWAYS">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin></VBox>
+                  <VBox fx:id="columna2" prefHeight="200.0" prefWidth="100.0" styleClass="columnaVbox" HBox.hgrow="ALWAYS" />
+                  <VBox fx:id="columna3" prefHeight="200.0" prefWidth="100.0" HBox.hgrow="ALWAYS" />
+                  <VBox fx:id="columna4" prefHeight="200.0" prefWidth="100.0" HBox.hgrow="ALWAYS" />
+                  <VBox fx:id="columna5" prefHeight="200.0" prefWidth="100.0" HBox.hgrow="ALWAYS" />
+                  <VBox fx:id="columna6" prefHeight="200.0" prefWidth="100.0" HBox.hgrow="ALWAYS" />
+                  <VBox fx:id="columna7" prefHeight="200.0" prefWidth="100.0" HBox.hgrow="ALWAYS" />
+                  <VBox fx:id="columna8" prefHeight="200.0" prefWidth="100.0" HBox.hgrow="ALWAYS" />
+                  <VBox fx:id="columna9" prefHeight="200.0" prefWidth="100.0" HBox.hgrow="ALWAYS" />
+                  <VBox fx:id="columna10" prefHeight="200.0" prefWidth="100.0" HBox.hgrow="ALWAYS" />
+               </children>
+            </HBox>
+         </children></VBox>
+   </children>
+</AnchorPane>

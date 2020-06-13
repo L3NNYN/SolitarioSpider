@@ -1,0 +1,223 @@
+@font-face {
+    font-family: Poppins;
+    src: url('Poppins-Regular.otf');
+}
+
+@font-face {
+    font-family: Poppins ExtraLight;
+    src: url('Poppins-ExtraLight.otf');
+}
+
+@font-face {
+    font-family: Aller;
+    src: url('Aller_Rg.ttf');
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url('Montserrat-Bold.otf');
+} 
+
+#tableroAnchorPane VBox ImageView{
+    -fx-margin-top:-50px;
+    /*-fx-align-content:*/ 
+}
+
+#Logo {
+    -fx-image: url('Logo.png');
+}
+
+#inicioAnchorPane {
+    /*background-image: linear-gradient(to right, #39006d, #4e038b, #6507aa, #7d0dca, #9612eb);*/
+    -fx-background-color: linear-gradient(to right, #39006d, #4e038b, #6507aa, #7d0dca, #9612eb);
+    /*-fx-background-color: rgb(0, 201, 183);*/
+}
+
+#inicioAnchorPane JFXButton {
+    -fx-background-radius: 30px;
+    -fx-border-radius: 30px;
+    -fx-border-width: 30px;
+    -fx-background-color: white;
+    
+    -fx-text-fill: #39006d;
+    -fx-font-family: 'Montserrat';
+    -fx-font-size: 13px;
+    -fx-padding: 8;
+    
+        
+    -fx-max-width: 180;
+    -fx-transition: 0.3s;
+    -fx-background-radius: 30px;
+    /*-fx-border-color:linear-gradient(to right, #39006d, #4e038b, #6507aa, #7d0dca, #9612eb)*/
+}
+
+#inicioAnchorPane JFXButton:hover {
+    -fx-background-color: #c7c7c7
+}
+
+.vboxVolver {
+    -fx-max-width: 100;
+    -fx-background-color: white;
+}
+
+.vboxVolver JFXButton {
+    -fx-max-width: 100;
+     -fx-text-fill: white;
+}
+
+.btnVolver:hover {
+/*     -fx-text-fill: black;*/
+}
+
+* {
+    
+}
+
+Label {
+    -fx-font-family: 'Poppins';
+    -fx-font-size: 15
+}
+
+JFXButton {
+    -fx-font-family: 'Montserrat';
+    -fx-font-size: 13px;
+    -fx-padding: 8;
+}
+
+JFXButton:hover {
+    -fx-background-color: #c7c7c7
+}
+
+.imgIniPar{
+/*     -fx-fitWidth: 100;
+     -fx-fitHeight: 100;*/
+     -fx-image: url('Play.png');
+}
+
+.imgPerso{
+     -fx-image: url('Personalizar.png');
+}
+
+.imgAyu {
+    -fx-image: url('Manual.png');
+}
+
+.imgPunt {
+    -fx-image: url('Puntuacion.png');
+    /*-fx-fitWidth: 32;*/ 
+    /*-fx-fitHeight: 32;*/
+    /*-fx-preserveRatio: true;*/
+}
+
+.imgGuardar {
+    -fx-image: url('Guardar.png');
+}
+
+.imgAcerca {
+    -fx-image: url('AcercaDe.png');
+}
+
+.imgVolver {
+     -fx-image: url('Volver.png');
+}
+
+.imgAdelante {
+     -fx-image: url('Adelante.png');
+}
+
+.mainFxmlClass {
+
+}
+
+.imgClasico {
+    -fx-image: url('../estilo1/13d.gif');
+}
+
+.imgModerno {
+    -fx-image: url('../estilo2/13s.gif');
+}
+
+.imgClasicoBack {
+    -fx-image: url('../estilo2/b.gif');
+}
+
+.imgModernoBack {
+    -fx-image: url('../estilo2/a.gif');
+}
+
+/*.radBtn {
+    -fx-selected-color: yellow;
+    -fx-unselected-color: blue;
+}*/
+
+/*.jfx-radio-button {
+    -fx-selected-color: yellow;
+    -fx-unselected-color: blue;
+}
+
+.jfx-rippler {
+    -fx-rippler-fill: lime;
+}*/
+
+/*BOTONES DE INICIO*/
+.btn {
+    -fx-background-radius: 30px;
+    -fx-border-radius: 30px;
+    -fx-border-width: 30px;
+    -fx-background-color: white;
+	/*-fx-cursor: pointer;*/
+}
+
+.btn:hover {
+    -fx-background-color: #c7c7c7
+}
+
+.btn-one {
+    -fx-color: #FFF;
+    -fx-transition: all 0.3s;
+    -fx-position: relative;
+}
+/*.btn-one span {
+    transition: all 0.3s;
+}*/
+/*.btn-one:hover span {
+    -fx-letter-spacing: 2px;
+}*/
+.btn-one:hover::before {
+    -fx-opacity: 1; 
+    -fx-transform: scale(1, 1); 
+}
+.btn-one::after {
+    -fx-content: '';
+    -fx-position: absolute;
+    -fx-bottom: 0;
+    -fx-left: 0;
+    -fx-width: 100%;
+    -fx-height: 100%;
+    -fx-z-index: 1;
+    -fx-transition: all 0.3s;
+    -fx-background-color: rgba(255,255,255,0.1);
+}
+.btn-one:hover::after {
+    -fx-opacity: 0; 
+    -fx-transform: scale(0.1, 1);
+}
+
+
+.tablero {
+/*-fx-background: 
+  radial-gradient(50% 59%, circle, #D2CAAB 3%, #364E27 4%, #364E27 11%, rgba(54,78,39,0) 12%, rgba(54,78,39,0)) 50px 0,
+  radial-gradient(50% 41%, circle, #364E27 3%, #D2CAAB 4%, #D2CAAB 11%, rgba(210,202,171,0) 12%, rgba(210,202,171,0)) 50px 0,
+  radial-gradient(50% 59%, circle, #D2CAAB 3%, #364E27 4%, #364E27 11%, rgba(54,78,39,0) 12%, rgba(54,78,39,0)) 0 50px,
+  radial-gradient(50% 41%, circle, #364E27 3%, #D2CAAB 4%, #D2CAAB 11%, rgba(210,202,171,0) 12%, rgba(210,202,171,0)) 0 50px,
+  radial-gradient(100% 50%, circle, #D2CAAB 16%, rgba(210,202,171,0) 17%),
+  radial-gradient(0% 50%, circle, #364E27 16%, rgba(54,78,39,0) 17%),
+  radial-gradient(100% 50%, circle, #D2CAAB 16%, rgba(210,202,171,0) 17%) 50px 50px,
+  radial-gradient(0% 50%, circle, #364E27 16%, rgba(54,78,39,0) 17%) 50px 50px;
+-fx-background-color:#63773F;
+-fx-background-size:100px 100px;*/
+}
+
+.carta {
+    -fx-background-image: url('../estilo2/4c.gif');
+}
